@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Thu Mar 16 11:35:29 2023
+# Process ID: 416713
+# Current directory: /home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/xilinx/zcu102/vsrc
+# Command line: vivado
+# Log file: /home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/xilinx/zcu102/vsrc/vivado.log
+# Journal file: /home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/xilinx/zcu102/vsrc/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ssddls1/tsingla/rc/rc_2c/zcu102/zcu102_rocketchip_ZynqConfig/zcu102_rocketchip_ZynqConfig.xpr
+update_compile_order -fileset sources_1

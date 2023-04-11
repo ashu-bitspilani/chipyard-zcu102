@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Mar 21 15:53:12 2023
+# Process ID: 112329
+# Current directory: /home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/xilinx/common/tcl
+# Command line: vivado
+# Log file: /home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/xilinx/common/tcl/vivado.log
+# Journal file: /home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/xilinx/common/tcl/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ssddls1/ashutosh/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 6409.855 ; gain = 146.141 ; free physical = 8920 ; free virtual = 15059
+update_compile_order -fileset sources_1
+open_bd_design {/home/ssddls1/ashutosh/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:ddr4:2.2 - ddr4_0
+Successfully read diagram <design_1> from BD file </home/ssddls1/ashutosh/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd>
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 21 16:00:44 2023...

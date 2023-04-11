@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Mar 29 21:31:54 2023
+# Process ID: 2417141
+# Current directory: /home/ssddls1/ashutosh/ashufpga/software/firemarshal
+# Command line: vivado
+# Log file: /home/ssddls1/ashutosh/ashufpga/software/firemarshal/vivado.log
+# Journal file: /home/ssddls1/ashutosh/ashufpga/software/firemarshal/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project project_2 /home/ssddls1/ashutosh/project_2 -part xczu9eg-ffvb1156-2-i-es2
+set_property board_part xilinx.com:zcu102_es2:part0:2.4 [current_project]

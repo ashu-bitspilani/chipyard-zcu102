@@ -1,0 +1,100 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Apr 10 12:41:32 2023
+# Process ID: 337719
+# Current directory: /home/ssddls1/ashutosh/ashufpga/software/firemarshal
+# Command line: vivado
+# Log file: /home/ssddls1/ashutosh/ashufpga/software/firemarshal/vivado.log
+# Journal file: /home/ssddls1/ashutosh/ashufpga/software/firemarshal/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 6415.098 ; gain = 139.688 ; free physical = 8793 ; free virtual = 13278
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon Apr 10 12:43:53 2023] Launched synth_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/synth_1/runme.log
+[Mon Apr 10 12:43:53 2023] Launched impl_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 6524.500 ; gain = 21.461 ; free physical = 8532 ; free virtual = 13019
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  6 2018-23:53:53
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210308A12AA1
+set_property PROGRAM.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.bit} [get_hw_devices xczu9_0]
+set_property PROBES.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.ltx} [get_hw_devices xczu9_0]
+set_property FULL_PROBES.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.ltx} [get_hw_devices xczu9_0]
+current_hw_device [get_hw_devices xczu9_0]
+refresh_hw_device [lindex [get_hw_devices xczu9_0] 0]
+INFO: [Labtools 27-1435] Device xczu9 (JTAG device index = 0) is not programmed (DONE status = 0).
+current_hw_device [get_hw_devices arm_dap_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices arm_dap_1] 0]
+current_hw_device [get_hw_devices xczu9_0]
+refresh_hw_device [lindex [get_hw_devices xczu9_0] 0]
+INFO: [Labtools 27-1435] Device xczu9 (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.ltx} [get_hw_devices xczu9_0]
+set_property FULL_PROBES.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.ltx} [get_hw_devices xczu9_0]
+set_property PROGRAM.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.bit} [get_hw_devices xczu9_0]
+program_hw_devices [get_hw_devices xczu9_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 7380.320 ; gain = 0.000 ; free physical = 4874 ; free virtual = 12063
+refresh_hw_device [lindex [get_hw_devices xczu9_0] 0]
+WARNING: [Labtools 27-3089] Calibration is still in-progress.
+INFO: [Labtools 27-2302] Device xczu9 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+INFO: [Labtools 27-3143] Calibration status change detected, refreshing MIG_1
+set_property PROBES.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.ltx} [get_hw_devices xczu9_0]
+set_property FULL_PROBES.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.ltx} [get_hw_devices xczu9_0]
+set_property PROGRAM.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.bit} [get_hw_devices xczu9_0]
+program_hw_devices [get_hw_devices xczu9_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 7416.980 ; gain = 0.000 ; free physical = 4907 ; free virtual = 12080
+refresh_hw_device [lindex [get_hw_devices xczu9_0] 0]
+WARNING: [Labtools 27-3089] Calibration is still in-progress.
+INFO: [Labtools 27-2302] Device xczu9 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+INFO: [Labtools 27-3143] Calibration status change detected, refreshing MIG_1
+set_property PROBES.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.ltx} [get_hw_devices xczu9_0]
+set_property FULL_PROBES.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.ltx} [get_hw_devices xczu9_0]
+set_property PROGRAM.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.bit} [get_hw_devices xczu9_0]
+program_hw_devices [get_hw_devices xczu9_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 7416.980 ; gain = 0.000 ; free physical = 4882 ; free virtual = 12059
+refresh_hw_device [lindex [get_hw_devices xczu9_0] 0]
+WARNING: [Labtools 27-3089] Calibration is still in-progress.
+INFO: [Labtools 27-2302] Device xczu9 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+INFO: [Labtools 27-3143] Calibration status change detected, refreshing MIG_1
+set_property PROBES.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.ltx} [get_hw_devices xczu9_0]
+set_property FULL_PROBES.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.ltx} [get_hw_devices xczu9_0]
+set_property PROGRAM.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.bit} [get_hw_devices xczu9_0]
+program_hw_devices [get_hw_devices xczu9_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 7416.980 ; gain = 0.000 ; free physical = 4854 ; free virtual = 12060
+refresh_hw_device [lindex [get_hw_devices xczu9_0] 0]
+WARNING: [Labtools 27-3089] Calibration is still in-progress.
+INFO: [Labtools 27-2302] Device xczu9 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+INFO: [Labtools 27-3143] Calibration status change detected, refreshing MIG_1
+set_property PROBES.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.ltx} [get_hw_devices xczu9_0]
+set_property FULL_PROBES.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.ltx} [get_hw_devices xczu9_0]
+set_property PROGRAM.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.bit} [get_hw_devices xczu9_0]
+program_hw_devices [get_hw_devices xczu9_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 7416.980 ; gain = 0.000 ; free physical = 4797 ; free virtual = 12048
+refresh_hw_device [lindex [get_hw_devices xczu9_0] 0]
+WARNING: [Labtools 27-3089] Calibration is still in-progress.
+INFO: [Labtools 27-2302] Device xczu9 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+INFO: [Labtools 27-3143] Calibration status change detected, refreshing MIG_1

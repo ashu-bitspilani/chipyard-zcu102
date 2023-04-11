@@ -1,0 +1,62 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Mar 29 22:17:29 2023
+# Process ID: 2438175
+# Current directory: /home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/xilinx/zcu102/tcl
+# Command line: vivado
+# Log file: /home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/xilinx/zcu102/tcl/vivado.log
+# Journal file: /home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/xilinx/zcu102/tcl/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 6408.445 ; gain = 132.730 ; free physical = 9093 ; free virtual = 12938
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Mar 29 22:36:14 2023] Launched synth_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/synth_1/runme.log
+[Wed Mar 29 22:36:15 2023] Launched impl_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 6522.719 ; gain = 7.004 ; free physical = 8829 ; free virtual = 12676
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210308A12AA1
+set_property PROGRAM.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.bit} [get_hw_devices xczu9_0]
+set_property PROBES.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.ltx} [get_hw_devices xczu9_0]
+set_property FULL_PROBES.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.ltx} [get_hw_devices xczu9_0]
+current_hw_device [get_hw_devices xczu9_0]
+refresh_hw_device [lindex [get_hw_devices xczu9_0] 0]
+INFO: [Labtools 27-1434] Device xczu9 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+current_hw_device [get_hw_devices arm_dap_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices arm_dap_1] 0]
+current_hw_device [get_hw_devices xczu9_0]
+refresh_hw_device [lindex [get_hw_devices xczu9_0] 0]
+INFO: [Labtools 27-1434] Device xczu9 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.ltx} [get_hw_devices xczu9_0]
+set_property FULL_PROBES.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.ltx} [get_hw_devices xczu9_0]
+set_property PROGRAM.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.bit} [get_hw_devices xczu9_0]
+program_hw_devices [get_hw_devices xczu9_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 7375.156 ; gain = 0.000 ; free physical = 8787 ; free virtual = 12083
+refresh_hw_device [lindex [get_hw_devices xczu9_0] 0]
+INFO: [Labtools 27-2302] Device xczu9 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 29 23:31:25 2023...

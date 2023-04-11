@@ -1,0 +1,293 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Mar 26 23:10:18 2023
+# Process ID: 1096160
+# Current directory: /home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/src/main/scala/shell/xilinx
+# Command line: vivado
+# Log file: /home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/src/main/scala/shell/xilinx/vivado.log
+# Journal file: /home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/src/main/scala/shell/xilinx/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 6410.527 ; gain = 133.387 ; free physical = 12823 ; free virtual = 15569
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 6
+[Mon Mar 27 14:02:05 2023] Launched synth_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 7764.352 ; gain = 5.707 ; free physical = 9503 ; free virtual = 13937
+launch_runs impl_1 -jobs 6
+[Mon Mar 27 14:16:17 2023] Launched impl_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.58 ; elapsed = 00:00:10 . Memory (MB): peak = 7825.887 ; gain = 0.000 ; free physical = 9430 ; free virtual = 13888
+launch_runs synth_1 -jobs 6
+[Mon Mar 27 16:40:49 2023] Launched synth_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 8305.133 ; gain = 0.000 ; free physical = 9404 ; free virtual = 13907
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+[Mon Mar 27 16:56:19 2023] Launched synth_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/synth_1/runme.log
+[Mon Mar 27 16:56:19 2023] Launched impl_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.98 ; elapsed = 00:00:10 . Memory (MB): peak = 8305.133 ; gain = 0.000 ; free physical = 9407 ; free virtual = 13909
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon Mar 27 17:23:25 2023] Launched impl_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.47 ; elapsed = 00:00:10 . Memory (MB): peak = 8305.133 ; gain = 0.000 ; free physical = 9808 ; free virtual = 14462
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Mon Mar 27 17:38:25 2023] Launched synth_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.34 ; elapsed = 00:00:10 . Memory (MB): peak = 8305.133 ; gain = 0.000 ; free physical = 9964 ; free virtual = 14493
+launch_runs impl_1 -jobs 6
+[Mon Mar 27 17:51:05 2023] Launched impl_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.47 ; elapsed = 00:00:10 . Memory (MB): peak = 8305.133 ; gain = 0.000 ; free physical = 9914 ; free virtual = 14467
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon Mar 27 21:39:24 2023] Launched impl_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.63 ; elapsed = 00:00:10 . Memory (MB): peak = 8305.133 ; gain = 0.000 ; free physical = 9783 ; free virtual = 14448
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Mon Mar 27 21:43:40 2023] Launched synth_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.41 ; elapsed = 00:00:10 . Memory (MB): peak = 8305.133 ; gain = 0.000 ; free physical = 9940 ; free virtual = 14478
+launch_runs impl_1 -jobs 6
+[Mon Mar 27 21:57:08 2023] Launched impl_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:10 . Memory (MB): peak = 8305.133 ; gain = 0.000 ; free physical = 9891 ; free virtual = 14453
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon Mar 27 22:15:52 2023] Launched impl_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:10 . Memory (MB): peak = 8305.133 ; gain = 0.000 ; free physical = 9774 ; free virtual = 14442
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 3558 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/cal_RESET_n[0]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/cal_RESET_n[0]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 10160.641 ; gain = 83.961 ; free physical = 7640 ; free virtual = 13194
+Restored from archive | CPU: 4.040000 secs | Memory: 94.054916 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 10160.641 ; gain = 83.961 ; free physical = 7640 ; free virtual = 13194
+Generating merged BMM file for the design top 'ZCU102FPGATestHarness'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/sw/calibration_0/Debug/calibration_ddr.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 10193.141 ; gain = 0.000 ; free physical = 7650 ; free virtual = 13205
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 556 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 3 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 15 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 3 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instances
+  IOBUFDS => IOBUFDS (DIFFINBUF, IBUFCTRL, INV, OBUFT, OBUFT): 1 instances
+  IOBUFE3 => IOBUFE3 (IBUFCTRL, INBUF, OBUFT_DCIEN): 9 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 31 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUF, OBUF): 1 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 99 instances
+  RAM256X1D => RAM256X1D (RAMD64E, RAMD64E, RAMD64E, RAMD64E, MUXF7, MUXF7, MUXF7, MUXF7, MUXF8, MUXF8, RAMD64E, RAMD64E, RAMD64E, RAMD64E): 2 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 45 instances
+  RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 313 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 10 instances
+  RAM64M8 => RAM64M8 (RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E): 23 instances
+
+open_run: Time (s): cpu = 00:01:11 ; elapsed = 00:01:54 . Memory (MB): peak = 10436.488 ; gain = 2131.355 ; free physical = 7328 ; free virtual = 12890
+open_report: Time (s): cpu = 00:00:25 ; elapsed = 00:00:06 . Memory (MB): peak = 11265.230 ; gain = 352.426 ; free physical = 6579 ; free virtual = 12142
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  6 2018-23:53:53
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210308A12AA1
+open_hw_target: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 11926.926 ; gain = 379.035 ; free physical = 2995 ; free virtual = 10172
+set_property PROGRAM.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.bit} [get_hw_devices xczu9_0]
+set_property PROBES.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.ltx} [get_hw_devices xczu9_0]
+set_property FULL_PROBES.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.ltx} [get_hw_devices xczu9_0]
+current_hw_device [get_hw_devices xczu9_0]
+refresh_hw_device [lindex [get_hw_devices xczu9_0] 0]
+INFO: [Labtools 27-1434] Device xczu9 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+current_hw_device [get_hw_devices arm_dap_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices arm_dap_1] 0]
+current_hw_device [get_hw_devices xczu9_0]
+refresh_hw_device [lindex [get_hw_devices xczu9_0] 0]
+INFO: [Labtools 27-1434] Device xczu9 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.ltx} [get_hw_devices xczu9_0]
+set_property FULL_PROBES.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.ltx} [get_hw_devices xczu9_0]
+set_property PROGRAM.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.bit} [get_hw_devices xczu9_0]
+program_hw_devices [get_hw_devices xczu9_0]
+ERROR: [Labtools 27-3303] Incorrect bitstream assigned to device. Bitstream was generated for part xczu9eg-ffvb1156-2-e, target device (with IDCODE revision 1) is compatible with es2 revision bitstreams.
+To allow the bitstream to be programmed to the device, use "set_param xicom.use_bitstream_version_check false" tcl command.
+INFO: [Labtools 27-3164] End of startup status: HIGH
+ERROR: [Common 17-39] 'program_hw_devices' failed due to earlier errors.
+set_property PROBES.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.ltx} [get_hw_devices xczu9_0]
+set_property FULL_PROBES.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.ltx} [get_hw_devices xczu9_0]
+set_property PROGRAM.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness.bit} [get_hw_devices xczu9_0]
+program_hw_devices [get_hw_devices xczu9_0]
+ERROR: [Labtools 27-3303] Incorrect bitstream assigned to device. Bitstream was generated for part xczu9eg-ffvb1156-2-e, target device (with IDCODE revision 1) is compatible with es2 revision bitstreams.
+To allow the bitstream to be programmed to the device, use "set_param xicom.use_bitstream_version_check false" tcl command.
+INFO: [Labtools 27-3164] End of startup status: HIGH
+ERROR: [Common 17-39] 'program_hw_devices' failed due to earlier errors.
+set_param xicom.use_bitstream_version_check false
+0
+set_para
+ERROR: [Common 17-163] Missing value for option 'name', please type 'set_param -help' for usage info.
+set_param xicom.use_bitstream_version_check false
+0
+set_param -help
+set_param
+
+Description: 
+Set a parameter value
+
+Syntax: 
+set_param  [-quiet] [-verbose] <name> <value>
+
+Returns: 
+newly set parameter value
+
+Usage: 
+  Name        Description
+  -----------------------
+  [-quiet]    Ignore command errors
+  [-verbose]  Suspend message limits during command execution
+  <name>      Parameter name
+  <value>     Parameter value
+
+Categories: 
+PropertyAndParameter
+
+Description:
+
+  Sets the value of a user-definable configuration parameter. These
+  parameters configure and control various behaviors of the tool. Refer to
+  report_param for a description of currently defined parameters.
+
+  As an example, a specific param that can be defined is the
+  general.maxThreads parameter for the Vivado Design Suite. On multiprocessor
+  systems, the Vivado Design Suite use multi-threading to speed up certain
+  processes, including DRC reporting, static timing analysis, placement, and
+  routing. A default limit applies to all tasks and is based on the operating
+  system. For Windows systems, the default is 2; for Linux systems the
+  default is 8. The limit can be changed as follows:
+
+    set_param general.maxThreads <value>  
+    
+
+  Where <value> is an integer from 1 to 8, inclusive.
+
+  The maximum number of simultaneous threads that can be used also varies by
+  the task being run. You can change the maxThreads parameter prior to
+  running these processes. The maximum number of threads for specific Tcl
+  commands are:
+
+   *  phys_opt_design: 8
+
+   *  place_design: 8
+
+   *  report_drc: 8
+
+   *  report_timing and report_timing_summary: 8
+
+   *  route_design: 8
+
+   *  synth_design: 4
+
+  You can use the reset_param command to restore any parameter that has been
+  modified back to its default setting.
+
+  Note: Setting a specified parameter value to -1 will disable the feature.
+
+Arguments:
+
+  <name> - (Required) The name of the parameter to set the value of. You can
+  only set the value of one parameter at a time.
+
+  <value> - (Required) The value to set the specified parameter to.
+
+  -quiet - (Optional) Execute the command quietly, returning no messages from
+  the command. The command also returns TCL_OK regardless of any errors
+  encountered during execution.
+
+  Note: Any errors encountered on the command-line, while launching the
+  command, will be returned. Only errors occurring inside the command will be
+  trapped.
+
+  -verbose - (Optional) Temporarily override any message limits and return
+  all messages from this command.
+
+  Note: Message limits can be defined with the set_msg_config command.
+
+Examples:
+
+  The following example sets the parameter defining how many threads to run
+  for multi-threaded processes, including Placement, Routing, and Timing
+  Analysis:
+
+    set_param general.maxThreads 4 
+    
+
+  Note: The Vivado tool supports between 1 to 8 threads. Use get_param to
+  determine the current setting.
+
+  The following example sets a new default value for message limit:
+
+    set_param messaging.defaultLimit 1000 
+    
+
+See Also:
+
+   *  get_param
+   *  list_param
+   *  report_param
+   *  reset_param
+refresh_hw_device [lindex [get_hw_devices xczu9_0] 0]
+INFO: [Labtools 27-1434] Device xczu9 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROGRAM.FILE {/home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/src/main/scala/shell/xilinx/ZCU102FPGATestHarness.bit} [get_hw_devices xczu9_0]
+ERROR: [Labtools 27-2149] File /home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/src/main/scala/shell/xilinx/ZCU102FPGATestHarness.bit not found. Check file name and file permissions.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 29 17:38:10 2023...

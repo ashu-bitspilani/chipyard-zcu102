@@ -1,0 +1,333 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Mar 24 17:06:30 2023
+# Process ID: 616025
+# Current directory: /home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/src/main/scala/ip/xilinx/zcu102mig
+# Command line: vivado
+# Log file: /home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/src/main/scala/ip/xilinx/zcu102mig/vivado.log
+# Journal file: /home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/src/main/scala/ip/xilinx/zcu102mig/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 6407.980 ; gain = 123.254 ; free physical = 11261 ; free virtual = 15067
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Mar 24 17:08:24 2023] Launched synth_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/synth_1/runme.log
+[Fri Mar 24 17:08:24 2023] Launched impl_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 6540.965 ; gain = 28.465 ; free physical = 11007 ; free virtual = 14817
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 3558 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/cal_RESET_n[0]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/cal_RESET_n[0]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 8389.531 ; gain = 88.961 ; free physical = 9114 ; free virtual = 13235
+Restored from archive | CPU: 4.160000 secs | Memory: 94.081329 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 8389.531 ; gain = 88.961 ; free physical = 9114 ; free virtual = 13235
+Generating merged BMM file for the design top 'ZCU102FPGATestHarness'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/sw/calibration_0/Debug/calibration_ddr.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8421.031 ; gain = 0.000 ; free physical = 9124 ; free virtual = 13246
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 556 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 3 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 15 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 3 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instances
+  IOBUFDS => IOBUFDS (DIFFINBUF, IBUFCTRL, INV, OBUFT, OBUFT): 1 instances
+  IOBUFE3 => IOBUFE3 (IBUFCTRL, INBUF, OBUFT_DCIEN): 9 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 31 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUF, OBUF): 1 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 99 instances
+  RAM256X1D => RAM256X1D (RAMD64E, RAMD64E, RAMD64E, RAMD64E, MUXF7, MUXF7, MUXF7, MUXF7, MUXF8, MUXF8, RAMD64E, RAMD64E, RAMD64E, RAMD64E): 2 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 45 instances
+  RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 313 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 10 instances
+  RAM64M8 => RAM64M8 (RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E): 23 instances
+
+open_run: Time (s): cpu = 00:01:11 ; elapsed = 00:01:52 . Memory (MB): peak = 8677.465 ; gain = 2132.500 ; free physical = 8882 ; free virtual = 13007
+open_report: Time (s): cpu = 00:00:24 ; elapsed = 00:00:06 . Memory (MB): peak = 9437.781 ; gain = 304.270 ; free physical = 8141 ; free virtual = 12267
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xczu9eg-ffvb1156-2-e
+INFO: [Netlist 29-17] Analyzing 3592 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/harnessSysPLL/harnessSysPLL_board.xdc] for cell 'harnessSysPLL/inst'
+Finished Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/harnessSysPLL/harnessSysPLL_board.xdc] for cell 'harnessSysPLL/inst'
+Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/harnessSysPLL/harnessSysPLL.xdc] for cell 'harnessSysPLL/inst'
+Finished Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/harnessSysPLL/harnessSysPLL.xdc] for cell 'harnessSysPLL/inst'
+Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/zcu102mig_board.xdc] for cell 'mig/island/blackbox/inst'
+Finished Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/zcu102mig_board.xdc] for cell 'mig/island/blackbox/inst'
+Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/par/zcu102mig.xdc] for cell 'mig/island/blackbox/inst'
+Finished Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/par/zcu102mig.xdc] for cell 'mig/island/blackbox/inst'
+Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/ip_0/zcu102mig_microblaze_mcs_board.xdc] for cell 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst'
+Finished Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/ip_0/zcu102mig_microblaze_mcs_board.xdc] for cell 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst'
+Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/bd_0/ip/ip_0/bd_de16_microblaze_I_0.xdc] for cell 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0'
+Finished Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/bd_0/ip/ip_0/bd_de16_microblaze_I_0.xdc] for cell 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0'
+Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/bd_0/ip/ip_1/bd_de16_rst_0_0_board.xdc] for cell 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Finished Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/bd_0/ip/ip_1/bd_de16_rst_0_0_board.xdc] for cell 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/bd_0/ip/ip_1/bd_de16_rst_0_0.xdc] for cell 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Finished Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/bd_0/ip/ip_1/bd_de16_rst_0_0.xdc] for cell 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/bd_0/ip/ip_2/bd_de16_ilmb_0.xdc] for cell 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/ilmb/U0'
+Finished Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/bd_0/ip/ip_2/bd_de16_ilmb_0.xdc] for cell 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/ilmb/U0'
+Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/bd_0/ip/ip_3/bd_de16_dlmb_0.xdc] for cell 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/dlmb/U0'
+Finished Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/bd_0/ip/ip_3/bd_de16_dlmb_0.xdc] for cell 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/dlmb/U0'
+Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/bd_0/ip/ip_10/bd_de16_iomodule_0_0_board.xdc] for cell 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/iomodule_0/U0'
+Finished Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/bd_0/ip/ip_10/bd_de16_iomodule_0_0_board.xdc] for cell 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/iomodule_0/U0'
+Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/xilinx/zcu102/constraints/zcu102-master.xdc]
+CRITICAL WARNING: [Netlist 29-177] Cannot set property 'BITSTREAM.CONFIG.SPI_FALL_EDGE' because the property does not exist. [/home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/xilinx/zcu102/constraints/zcu102-master.xdc:2]
+Resolution: Create this property using create_property command before setting it.
+CRITICAL WARNING: [Netlist 29-177] Cannot set property 'BITSTREAM.CONFIG.SPI_BUSWIDTH' because the property does not exist. [/home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/xilinx/zcu102/constraints/zcu102-master.xdc:3]
+Resolution: Create this property using create_property command before setting it.
+WARNING: [Vivado 12-5460] The attribute CFGBVS is not supported in the xczu9eg-ffvb1156-2-e device [/home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/xilinx/zcu102/constraints/zcu102-master.xdc:6]
+WARNING: [Vivado 12-5460] The attribute CONFIG_VOLTAGE is not supported in the xczu9eg-ffvb1156-2-e device [/home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/xilinx/zcu102/constraints/zcu102-master.xdc:7]
+CRITICAL WARNING: [Netlist 29-154] Cannot set property 'CONFIG_MODE' because incorrect value 'SPIx8' specified. Expecting type 'enum' with possible values of 'B_SCAN'. [/home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/xilinx/zcu102/constraints/zcu102-master.xdc:8]
+Resolution: Please check the value of the property and set to a correct value.
+Finished Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/xilinx/zcu102/constraints/zcu102-master.xdc]
+Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.sdc]
+WARNING: [Vivado 12-2489] -period contains time 3.333333 which will be rounded to 3.333 to ensure it is an integer multiple of 1 picosecond [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.sdc:2]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.sdc:5]
+INFO: [Timing 38-2] Deriving generated clocks [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.sdc:5]
+get_clocks: Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 9762.598 ; gain = 35.016 ; free physical = 8280 ; free virtual = 12417
+Finished Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.sdc]
+Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc]
+CRITICAL WARNING: [Common 17-679] Invalid object type, 'port', used with '-of_objects' switch. Supported types are: 'net, pblock, pin, timing path, bel, site, slr'. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:7]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -of_objects [all_fanin -flat -startpoints_only [get_ports uart_ctsn]]'. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-679] Invalid object type, 'port', used with '-of_objects' switch. Supported types are: 'net, pblock, pin, timing path, bel, site, slr'. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:10]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -of_objects [all_fanin -flat -startpoints_only [get_ports uart_rtsn]]'. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-679] Invalid object type, 'port', used with '-of_objects' switch. Supported types are: 'net, pblock, pin, timing path, bel, site, slr'. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:13]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -of_objects [all_fanin -flat -startpoints_only [get_ports uart_rxd]]'. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-679] Invalid object type, 'port', used with '-of_objects' switch. Supported types are: 'net, pblock, pin, timing path, bel, site, slr'. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:34]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -of_objects [all_fanin -flat -startpoints_only [get_ports sdio_spi_dat_0]]'. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-679] Invalid object type, 'port', used with '-of_objects' switch. Supported types are: 'net, pblock, pin, timing path, bel, site, slr'. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:36]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -of_objects [all_fanin -flat -startpoints_only [get_ports sdio_spi_dat_1]]'. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-679] Invalid object type, 'port', used with '-of_objects' switch. Supported types are: 'net, pblock, pin, timing path, bel, site, slr'. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:38]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -of_objects [all_fanin -flat -startpoints_only [get_ports sdio_spi_dat_2]]'. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr_c0_ddr4_ba[2]'. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc]
+Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/harnessSysPLL/harnessSysPLL_late.xdc] for cell 'harnessSysPLL/inst'
+Finished Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/harnessSysPLL/harnessSysPLL_late.xdc] for cell 'harnessSysPLL/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'ZCU102FPGATestHarness'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/sw/calibration_0/Debug/calibration_ddr.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9762.598 ; gain = 0.000 ; free physical = 8366 ; free virtual = 12503
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 584 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 3 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 15 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 3 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instances
+  IOBUFDS => IOBUFDS (DIFFINBUF, IBUFCTRL, INV, OBUFT, OBUFT): 1 instances
+  IOBUFE3 => IOBUFE3 (IBUFCTRL, INBUF, OBUFT_DCIEN): 9 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 63 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUF, OBUF): 1 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 99 instances
+  RAM256X1D => RAM256X1D (RAMD64E, RAMD64E, RAMD64E, RAMD64E, MUXF7, MUXF7, MUXF7, MUXF7, MUXF8, MUXF8, RAMD64E, RAMD64E, RAMD64E, RAMD64E): 2 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 45 instances
+  RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 309 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 10 instances
+  RAM64M8 => RAM64M8 (RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E): 23 instances
+
+open_run: Time (s): cpu = 00:00:43 ; elapsed = 00:00:26 . Memory (MB): peak = 9830.633 ; gain = 103.051 ; free physical = 8374 ; free virtual = 12511
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 3558 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/cal_RESET_n[0]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/cal_RESET_n[0]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 9830.633 ; gain = 0.000 ; free physical = 7682 ; free virtual = 11824
+Restored from archive | CPU: 4.690000 secs | Memory: 92.460747 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 9830.633 ; gain = 0.000 ; free physical = 7682 ; free virtual = 11824
+Generating merged BMM file for the design top 'ZCU102FPGATestHarness'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/sw/calibration_0/Debug/calibration_ddr.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 9830.633 ; gain = 0.000 ; free physical = 7685 ; free virtual = 11827
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 556 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 3 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 15 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 3 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instances
+  IOBUFDS => IOBUFDS (DIFFINBUF, IBUFCTRL, INV, OBUFT, OBUFT): 1 instances
+  IOBUFE3 => IOBUFE3 (IBUFCTRL, INBUF, OBUFT_DCIEN): 9 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 31 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUF, OBUF): 1 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 99 instances
+  RAM256X1D => RAM256X1D (RAMD64E, RAMD64E, RAMD64E, RAMD64E, MUXF7, MUXF7, MUXF7, MUXF7, MUXF8, MUXF8, RAMD64E, RAMD64E, RAMD64E, RAMD64E): 2 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 45 instances
+  RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 313 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 10 instances
+  RAM64M8 => RAM64M8 (RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E): 23 instances
+
+open_run: Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 9867.559 ; gain = 36.926 ; free physical = 7563 ; free virtual = 11705
+open_report: Time (s): cpu = 00:00:19 ; elapsed = 00:00:05 . Memory (MB): peak = 10119.816 ; gain = 196.230 ; free physical = 7142 ; free virtual = 11284
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Mar 24 18:04:24 2023] Launched impl_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.51 ; elapsed = 00:00:10 . Memory (MB): peak = 10168.234 ; gain = 0.000 ; free physical = 6897 ; free virtual = 11045
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 10168.234 ; gain = 0.000 ; free physical = 7132 ; free virtual = 11196
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.99 ; elapsed = 00:00:00.21 . Memory (MB): peak = 10180.246 ; gain = 4.008 ; free physical = 7093 ; free virtual = 11167
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 10206.254 ; gain = 0.000 ; free physical = 7071 ; free virtual = 11149
+[Fri Mar 24 18:08:37 2023] Launched impl_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 10216.023 ; gain = 47.789 ; free physical = 6952 ; free virtual = 11032
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Mar 24 18:24:04 2023] Launched impl_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:10 . Memory (MB): peak = 10216.023 ; gain = 0.000 ; free physical = 6839 ; free virtual = 11025
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Mar 24 18:30:21 2023] Launched synth_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.49 ; elapsed = 00:00:10 . Memory (MB): peak = 10216.023 ; gain = 0.000 ; free physical = 7011 ; free virtual = 11055
+launch_runs impl_1 -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Mar 24 18:42:46 2023] Launched impl_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.37 ; elapsed = 00:00:11 . Memory (MB): peak = 10221.523 ; gain = 0.000 ; free physical = 9145 ; free virtual = 11229
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Mar 24 18:48:27 2023] Launched synth_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.45 ; elapsed = 00:00:10 . Memory (MB): peak = 10221.523 ; gain = 0.000 ; free physical = 8790 ; free virtual = 11096
+launch_runs impl_1 -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Mar 24 19:00:16 2023] Launched impl_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:10 . Memory (MB): peak = 10221.523 ; gain = 0.000 ; free physical = 9248 ; free virtual = 11091
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Mar 24 19:15:58 2023] Launched impl_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.48 ; elapsed = 00:00:10 . Memory (MB): peak = 10221.523 ; gain = 0.000 ; free physical = 8858 ; free virtual = 11052
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Sat Mar 25 22:31:38 2023] Launched synth_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.60 ; elapsed = 00:00:10 . Memory (MB): peak = 10444.223 ; gain = 0.000 ; free physical = 6575 ; free virtual = 10739
+current_design synth_1
+launch_runs impl_1 -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Mar 25 22:45:20 2023] Launched impl_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:10 . Memory (MB): peak = 10444.223 ; gain = 0.000 ; free physical = 9076 ; free virtual = 10804
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Sat Mar 25 22:56:32 2023] Launched synth_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:10 . Memory (MB): peak = 10444.223 ; gain = 0.000 ; free physical = 9008 ; free virtual = 10755
+launch_runs impl_1 -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Mar 25 23:09:08 2023] Launched impl_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:10 . Memory (MB): peak = 10444.223 ; gain = 0.000 ; free physical = 9091 ; free virtual = 10759
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Sat Mar 25 23:19:11 2023] Launched synth_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.30 ; elapsed = 00:00:10 . Memory (MB): peak = 10444.223 ; gain = 0.000 ; free physical = 9120 ; free virtual = 10770
+launch_runs impl_1 -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Mar 25 23:30:37 2023] Launched impl_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.30 ; elapsed = 00:00:10 . Memory (MB): peak = 10444.223 ; gain = 0.000 ; free physical = 9191 ; free virtual = 10766
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Sat Mar 25 23:43:07 2023] Launched synth_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:10 . Memory (MB): peak = 10444.223 ; gain = 0.000 ; free physical = 9210 ; free virtual = 10770
+launch_runs impl_1 -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Mar 25 23:54:42 2023] Launched impl_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.34 ; elapsed = 00:00:10 . Memory (MB): peak = 10444.223 ; gain = 0.000 ; free physical = 9298 ; free virtual = 10753
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Sun Mar 26 00:03:01 2023] Launched synth_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:10 . Memory (MB): peak = 10444.223 ; gain = 0.000 ; free physical = 9326 ; free virtual = 10814
+launch_runs impl_1 -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Mar 26 00:15:06 2023] Launched impl_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.33 ; elapsed = 00:00:10 . Memory (MB): peak = 10444.223 ; gain = 0.000 ; free physical = 9310 ; free virtual = 10807
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sun Mar 26 00:30:32 2023] Launched impl_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:10 . Memory (MB): peak = 10444.223 ; gain = 0.000 ; free physical = 9169 ; free virtual = 10793
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Sun Mar 26 13:50:26 2023] Launched synth_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.45 ; elapsed = 00:00:10 . Memory (MB): peak = 10444.223 ; gain = 0.000 ; free physical = 8949 ; free virtual = 10796
+launch_runs impl_1 -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Mar 26 14:51:51 2023] Launched impl_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.48 ; elapsed = 00:00:10 . Memory (MB): peak = 10444.223 ; gain = 0.000 ; free physical = 9087 ; free virtual = 10787
+current_design impl_1
+refresh_design
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Netlist 29-17] Analyzing 3558 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 10497.965 ; gain = 53.742 ; free physical = 9628 ; free virtual = 11491
+INFO: [Common 17-344] 'refresh_design' was cancelled
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sun Mar 26 15:08:16 2023] Launched impl_1...
+Run output will be captured here: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.32 ; elapsed = 00:00:10 . Memory (MB): peak = 10497.965 ; gain = 0.000 ; free physical = 9378 ; free virtual = 11243
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 26 23:09:18 2023...

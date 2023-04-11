@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Mar 24 12:45:31 2023
+# Process ID: 553162
+# Current directory: /home/ssddls1/ashutosh/ashufpga/fpga/src/main/scala/zcu102
+# Command line: vivado
+# Log file: /home/ssddls1/ashutosh/ashufpga/fpga/src/main/scala/zcu102/vivado.log
+# Journal file: /home/ssddls1/ashutosh/ashufpga/fpga/src/main/scala/zcu102/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ssddls1/tsingla/fpgayard/fpga/generated-src/chipyard.fpga.zcu106.ZCU106FPGATestHarness.RocketZCU106Config/ZCU106FPGATestHarness.xpr
+update_compile_order -fileset sources_1

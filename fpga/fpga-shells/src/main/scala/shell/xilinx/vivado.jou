@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Mar 27 12:31:16 2023
+# Process ID: 1159759
+# Current directory: /home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/src/main/scala/shell/xilinx
+# Command line: vivado
+# Log file: /home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/src/main/scala/shell/xilinx/vivado.log
+# Journal file: /home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/src/main/scala/shell/xilinx/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ssddls1/tsingla/fpgayard/fpga/generated-src/chipyard.fpga.zcu106.ZCU106FPGATestHarness.RocketZCU106Config/ZCU106FPGATestHarness.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xczu9_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xczu9_0] 0]
+current_hw_device [get_hw_devices arm_dap_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices arm_dap_1] 0]
+current_hw_device [get_hw_devices xczu9_0]

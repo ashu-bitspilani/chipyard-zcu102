@@ -1,0 +1,64 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Mar 27 12:31:16 2023
+# Process ID: 1159759
+# Current directory: /home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/src/main/scala/shell/xilinx
+# Command line: vivado
+# Log file: /home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/src/main/scala/shell/xilinx/vivado.log
+# Journal file: /home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/src/main/scala/shell/xilinx/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ssddls1/tsingla/fpgayard/fpga/generated-src/chipyard.fpga.zcu106.ZCU106FPGATestHarness.RocketZCU106Config/ZCU106FPGATestHarness.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ssddls1/tsingla/fpgayard/fpga/generated-src/chipyard.fpga.zcu106.ZCU106FPGATestHarness.RocketZCU106Config/obj/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 6400.602 ; gain = 131.887 ; free physical = 11046 ; free virtual = 14816
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Mar 29 15:49:37 2023] Launched synth_1...
+Run output will be captured here: /home/ssddls1/tsingla/fpgayard/fpga/generated-src/chipyard.fpga.zcu106.ZCU106FPGATestHarness.RocketZCU106Config/ZCU106FPGATestHarness.runs/synth_1/runme.log
+[Wed Mar 29 15:49:38 2023] Launched impl_1...
+Run output will be captured here: /home/ssddls1/tsingla/fpgayard/fpga/generated-src/chipyard.fpga.zcu106.ZCU106FPGATestHarness.RocketZCU106Config/ZCU106FPGATestHarness.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 6575.395 ; gain = 15.734 ; free physical = 2616 ; free virtual = 9990
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210308A12AA1
+current_hw_device [get_hw_devices xczu9_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xczu9_0] 0]
+INFO: [Labtools 27-1434] Device xczu9 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+current_hw_device [get_hw_devices arm_dap_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices arm_dap_1] 0]
+current_hw_device [get_hw_devices xczu9_0]
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210308A12AA1
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210308A12AA1
+CRITICAL WARNING: [Labtools 27-3421] xczu9_0 PL Power Status OFF, cannot connect PL TAP.  Check POR_B signal.
+CRITICAL WARNING: [Labtools 27-3421] xczu9_0 PL Power Status OFF, cannot connect PL TAP.  Check POR_B signal.
+INFO: [Labtools 27-1435] Device xczu9 (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtools 27-2312] Device dummy_dap_1 is no longer available.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target.
+Use open_hw_target to re-register the hardware device.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+CRITICAL WARNING: [Labtools 27-3421] xczu9_0 PL Power Status OFF, cannot connect PL TAP.  Check POR_B signal.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210308A12AA1
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210308A12AA1
+CRITICAL WARNING: [Labtools 27-3421] xczu9_0 PL Power Status OFF, cannot connect PL TAP.  Check POR_B signal.
+CRITICAL WARNING: [Labtools 27-3421] xczu9_0 PL Power Status OFF, cannot connect PL TAP.  Check POR_B signal.
+INFO: [Labtools 27-1435] Device xczu9 (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtools 27-2312] Device dummy_dap_1 is no longer available.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target.
+Use open_hw_target to re-register the hardware device.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+CRITICAL WARNING: [Labtools 27-3421] xczu9_0 PL Power Status OFF, cannot connect PL TAP.  Check POR_B signal.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 30 14:15:04 2023...

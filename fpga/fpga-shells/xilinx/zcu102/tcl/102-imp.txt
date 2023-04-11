@@ -1,0 +1,757 @@
+
+*** Running vivado
+    with args -log ZCU102FPGATestHarness.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source ZCU102FPGATestHarness.tcl -notrace
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source ZCU102FPGATestHarness.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1352.301 ; gain = 0.000 ; free physical = 10389 ; free virtual = 12625
+Command: link_design -top ZCU102FPGATestHarness -part xczu9eg-ffvb1156-2-i-es2
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 3592 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-i-es2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/harnessSysPLL/harnessSysPLL_board.xdc] for cell 'harnessSysPLL/inst'
+Finished Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/harnessSysPLL/harnessSysPLL_board.xdc] for cell 'harnessSysPLL/inst'
+Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/harnessSysPLL/harnessSysPLL.xdc] for cell 'harnessSysPLL/inst'
+Finished Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/harnessSysPLL/harnessSysPLL.xdc] for cell 'harnessSysPLL/inst'
+Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/zcu102mig_board.xdc] for cell 'mig/island/blackbox/inst'
+Finished Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/zcu102mig_board.xdc] for cell 'mig/island/blackbox/inst'
+Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/par/zcu102mig.xdc] for cell 'mig/island/blackbox/inst'
+Finished Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/par/zcu102mig.xdc] for cell 'mig/island/blackbox/inst'
+Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/ip_0/zcu102mig_microblaze_mcs_board.xdc] for cell 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst'
+Finished Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/ip_0/zcu102mig_microblaze_mcs_board.xdc] for cell 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst'
+Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/bd_0/ip/ip_0/bd_de16_microblaze_I_0.xdc] for cell 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0'
+Finished Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/bd_0/ip/ip_0/bd_de16_microblaze_I_0.xdc] for cell 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0'
+Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/bd_0/ip/ip_1/bd_de16_rst_0_0_board.xdc] for cell 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Finished Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/bd_0/ip/ip_1/bd_de16_rst_0_0_board.xdc] for cell 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/bd_0/ip/ip_1/bd_de16_rst_0_0.xdc] for cell 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Finished Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/bd_0/ip/ip_1/bd_de16_rst_0_0.xdc] for cell 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/bd_0/ip/ip_2/bd_de16_ilmb_0.xdc] for cell 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/ilmb/U0'
+Finished Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/bd_0/ip/ip_2/bd_de16_ilmb_0.xdc] for cell 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/ilmb/U0'
+Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/bd_0/ip/ip_3/bd_de16_dlmb_0.xdc] for cell 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/dlmb/U0'
+Finished Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/bd_0/ip/ip_3/bd_de16_dlmb_0.xdc] for cell 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/dlmb/U0'
+Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/bd_0/ip/ip_10/bd_de16_iomodule_0_0_board.xdc] for cell 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/iomodule_0/U0'
+Finished Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/bd_0/ip/ip_10/bd_de16_iomodule_0_0_board.xdc] for cell 'mig/island/blackbox/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/iomodule_0/U0'
+Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/xilinx/zcu102/constraints/zcu102-master.xdc]
+CRITICAL WARNING: [Netlist 29-177] Cannot set property 'BITSTREAM.CONFIG.SPI_FALL_EDGE' because the property does not exist. [/home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/xilinx/zcu102/constraints/zcu102-master.xdc:2]
+Resolution: Create this property using create_property command before setting it.
+CRITICAL WARNING: [Netlist 29-177] Cannot set property 'BITSTREAM.CONFIG.SPI_BUSWIDTH' because the property does not exist. [/home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/xilinx/zcu102/constraints/zcu102-master.xdc:3]
+Resolution: Create this property using create_property command before setting it.
+WARNING: [Vivado 12-5460] The attribute CFGBVS is not supported in the xczu9eg-ffvb1156-2-i-es2 device [/home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/xilinx/zcu102/constraints/zcu102-master.xdc:6]
+WARNING: [Vivado 12-5460] The attribute CONFIG_VOLTAGE is not supported in the xczu9eg-ffvb1156-2-i-es2 device [/home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/xilinx/zcu102/constraints/zcu102-master.xdc:7]
+CRITICAL WARNING: [Netlist 29-154] Cannot set property 'CONFIG_MODE' because incorrect value 'SPIx8' specified. Expecting type 'enum' with possible values of 'B_SCAN'. [/home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/xilinx/zcu102/constraints/zcu102-master.xdc:8]
+Resolution: Please check the value of the property and set to a correct value.
+Finished Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/fpga-shells/xilinx/zcu102/constraints/zcu102-master.xdc]
+Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.sdc]
+WARNING: [Vivado 12-2489] -period contains time 3.333333 which will be rounded to 3.333 to ensure it is an integer multiple of 1 picosecond [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.sdc:2]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.sdc:5]
+INFO: [Timing 38-2] Deriving generated clocks [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.sdc:5]
+get_clocks: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 3321.461 ; gain = 525.320 ; free physical = 8672 ; free virtual = 10915
+Finished Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.sdc]
+Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc]
+CRITICAL WARNING: [Common 17-679] Invalid object type, 'port', used with '-of_objects' switch. Supported types are: 'net, pblock, pin, timing path, bel, site, slr'. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:7]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -of_objects [all_fanin -flat -startpoints_only [get_ports uart_ctsn]]'. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-679] Invalid object type, 'port', used with '-of_objects' switch. Supported types are: 'net, pblock, pin, timing path, bel, site, slr'. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:10]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -of_objects [all_fanin -flat -startpoints_only [get_ports uart_rtsn]]'. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-679] Invalid object type, 'port', used with '-of_objects' switch. Supported types are: 'net, pblock, pin, timing path, bel, site, slr'. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:13]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -of_objects [all_fanin -flat -startpoints_only [get_ports uart_rxd]]'. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-679] Invalid object type, 'port', used with '-of_objects' switch. Supported types are: 'net, pblock, pin, timing path, bel, site, slr'. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:32]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -of_objects [all_fanin -flat -startpoints_only [get_ports sdio_spi_dat_0]]'. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-679] Invalid object type, 'port', used with '-of_objects' switch. Supported types are: 'net, pblock, pin, timing path, bel, site, slr'. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:34]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -of_objects [all_fanin -flat -startpoints_only [get_ports sdio_spi_dat_1]]'. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-679] Invalid object type, 'port', used with '-of_objects' switch. Supported types are: 'net, pblock, pin, timing path, bel, site, slr'. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:36]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -of_objects [all_fanin -flat -startpoints_only [get_ports sdio_spi_dat_2]]'. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config.shell.xdc]
+Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/harnessSysPLL/harnessSysPLL_late.xdc] for cell 'harnessSysPLL/inst'
+Finished Parsing XDC File [/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/harnessSysPLL/harnessSysPLL_late.xdc] for cell 'harnessSysPLL/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'ZCU102FPGATestHarness'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/obj/ip/zcu102mig/sw/calibration_0/Debug/calibration_ddr.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3357.473 ; gain = 0.000 ; free physical = 8781 ; free virtual = 11024
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 584 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 3 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 15 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 3 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instances
+  IOBUFDS => IOBUFDS (DIFFINBUF, IBUFCTRL, INV, OBUFT, OBUFT): 1 instances
+  IOBUFE3 => IOBUFE3 (IBUFCTRL, INBUF, OBUFT_DCIEN): 9 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 63 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUF, OBUF): 1 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 99 instances
+  RAM256X1D => RAM256X1D (RAMD64E, RAMD64E, RAMD64E, RAMD64E, MUXF7, MUXF7, MUXF7, MUXF7, MUXF8, MUXF8, RAMD64E, RAMD64E, RAMD64E, RAMD64E): 2 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 45 instances
+  RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 309 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 10 instances
+  RAM64M8 => RAM64M8 (RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E): 23 instances
+
+13 Infos, 9 Warnings, 15 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:46 ; elapsed = 00:01:20 . Memory (MB): peak = 3357.473 ; gain = 2005.172 ; free physical = 8781 ; free virtual = 11024
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu9eg-es2'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu9eg-es2'
+INFO: [Common 17-1540] The version limit for your license is '2023.01' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ddr_c0_ddr4_dm_dbi_n[1] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ddr_c0_ddr4_dq[10] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ddr_c0_ddr4_dq[11] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ddr_c0_ddr4_dq[12] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ddr_c0_ddr4_dq[13] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ddr_c0_ddr4_dq[14] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ddr_c0_ddr4_dq[15] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ddr_c0_ddr4_dq[8] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ddr_c0_ddr4_dq[9] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ddr_c0_ddr4_dqs_c[1] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ddr_c0_ddr4_dqs_t[1] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port sdio_spi_clk expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port sdio_spi_cs expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port sdio_spi_dat_0 expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port sdio_spi_dat_3 expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port uart_rxd expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port uart_txd expects both input and output buffering but the buffers are incomplete.
+INFO: [Project 1-461] DRC finished with 0 Errors, 17 Warnings
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3405.496 ; gain = 48.023 ; free physical = 8763 ; free virtual = 11007
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 750763c8
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:03 . Memory (MB): peak = 3405.496 ; gain = 0.000 ; free physical = 8687 ; free virtual = 10933
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize MIG Cores
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3405.496 ; gain = 0.000 ; free physical = 8634 ; free virtual = 10879
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3405.496 ; gain = 0.000 ; free physical = 8633 ; free virtual = 10878
+INFO: [Mig 66-111] Re-using generated and synthesized IP, "xilinx.com:ip:ddr4_phy:2.2", from Vivado IP cache entry "880185437a80879e".
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3475.715 ; gain = 0.000 ; free physical = 8546 ; free virtual = 10814
+Phase 1 Generate And Synthesize MIG Cores | Checksum: 27d63a1b8
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 3475.715 ; gain = 70.219 ; free physical = 8546 ; free virtual = 10814
+
+Phase 2 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-220] Re-using generated and synthesized IP, "xilinx.com:ip:xsdbm:3.0", from Vivado IP cache entry "d56a0ce48f2f305c".
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3489.762 ; gain = 0.000 ; free physical = 8494 ; free virtual = 10790
+Phase 2 Generate And Synthesize Debug Cores | Checksum: 1b1283e71
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:48 . Memory (MB): peak = 3490.762 ; gain = 85.266 ; free physical = 8493 ; free virtual = 10789
+
+Phase 3 Retarget
+INFO: [Opt 31-138] Pushed 8 inverter(s) to 1751 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 15e4540f0
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:51 . Memory (MB): peak = 3520.762 ; gain = 115.266 ; free physical = 8573 ; free virtual = 10869
+INFO: [Opt 31-389] Phase Retarget created 123 cells and removed 264 cells
+INFO: [Opt 31-1021] In phase Retarget, 252 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 1b673ac78
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:53 . Memory (MB): peak = 3520.762 ; gain = 115.266 ; free physical = 8574 ; free virtual = 10870
+INFO: [Opt 31-389] Phase Constant propagation created 44 cells and removed 216 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 244 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: 17d673bba
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:56 . Memory (MB): peak = 3520.762 ; gain = 115.266 ; free physical = 8569 ; free virtual = 10865
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 945 cells
+INFO: [Opt 31-1021] In phase Sweep, 1997 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG harnessSysPLL/inst/clk_out1_harnessSysPLL_BUFG_inst to drive 0 load(s) on clock net harnessSysPLL/inst/clk_out1_harnessSysPLL_BUFGCE
+INFO: [Opt 31-194] Inserted BUFG mig/island/blackbox/inst/u_ddr4_infrastructure/mmcm_clkout0_BUFG_inst to drive 0 load(s) on clock net mig/island/blackbox/inst/u_ddr4_infrastructure/mmcm_clkout0_BUFGCE
+INFO: [Opt 31-194] Inserted BUFG mig/island/blackbox/inst/u_ddr4_infrastructure/mmcm_clkout5_BUFG_inst to drive 0 load(s) on clock net mig/island/blackbox/inst/u_ddr4_infrastructure/mmcm_clkout5_BUFGCE
+INFO: [Opt 31-194] Inserted BUFG mig/island/blackbox/inst/u_ddr4_infrastructure/mmcm_clkout6_BUFG_inst to drive 0 load(s) on clock net mig/island/blackbox/inst/u_ddr4_infrastructure/mmcm_clkout6_BUFGCE
+INFO: [Opt 31-193] Inserted 4 BUFG(s) on clock nets
+INFO: [Opt 31-274] Optimized connectivity to 1 cascaded buffer cells
+Phase 6 BUFG optimization | Checksum: 15e0c8ac7
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:57 . Memory (MB): peak = 3520.762 ; gain = 115.266 ; free physical = 8569 ; free virtual = 10866
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 1 cells.
+
+Phase 7 Shift Register Optimization
+Phase 7 Shift Register Optimization | Checksum: 2457b1fc7
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:01:00 . Memory (MB): peak = 3520.762 ; gain = 115.266 ; free physical = 8569 ; free virtual = 10865
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 1e0e1d40e
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:01:01 . Memory (MB): peak = 3520.762 ; gain = 115.266 ; free physical = 8571 ; free virtual = 10868
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 1 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 164 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             123  |             264  |                                            252  |
+|  Constant propagation         |              44  |             216  |                                            244  |
+|  Sweep                        |               0  |             945  |                                           1997  |
+|  BUFG optimization            |               0  |               1  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               1  |                                            164  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.21 . Memory (MB): peak = 3520.762 ; gain = 0.000 ; free physical = 8571 ; free virtual = 10867
+Ending Logic Optimization Task | Checksum: 1d538c7d7
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:01:01 . Memory (MB): peak = 3520.762 ; gain = 115.266 ; free physical = 8570 ; free virtual = 10867
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.847 | TNS=0.000 |
+INFO: [Power 33-23] Power model is not available for xiphy_riu_or
+INFO: [Power 33-23] Power model is not available for genVref.u_hpio_vref
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 200 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 71 newly gated: 1 Total Ports: 400
+Ending PowerOpt Patch Enables Task | Checksum: 27450c178
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 7769 ; free virtual = 10202
+Ending Power Optimization Task | Checksum: 27450c178
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:00:40 . Memory (MB): peak = 5341.223 ; gain = 1820.461 ; free physical = 7836 ; free virtual = 10269
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 26ca3894c
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:06 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 7836 ; free virtual = 10270
+Ending Final Cleanup Task | Checksum: 26ca3894c
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 7830 ; free virtual = 10264
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 7830 ; free virtual = 10264
+Ending Netlist Obfuscation Task | Checksum: 26ca3894c
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 7830 ; free virtual = 10263
+INFO: [Common 17-83] Releasing license: Implementation
+61 Infos, 39 Warnings, 15 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:03:26 ; elapsed = 00:02:39 . Memory (MB): peak = 5341.223 ; gain = 1983.750 ; free physical = 7830 ; free virtual = 10264
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 7830 ; free virtual = 10264
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.37 ; elapsed = 00:00:00.08 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 7762 ; free virtual = 10203
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 7725 ; free virtual = 10185
+INFO: [Common 17-1381] The checkpoint '/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 7747 ; free virtual = 10201
+INFO: [runtcl-4] Executing : report_drc -file ZCU102FPGATestHarness_drc_opted.rpt -pb ZCU102FPGATestHarness_drc_opted.pb -rpx ZCU102FPGATestHarness_drc_opted.rpx
+Command: report_drc -file ZCU102FPGATestHarness_drc_opted.rpt -pb ZCU102FPGATestHarness_drc_opted.pb -rpx ZCU102FPGATestHarness_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu9eg-es2'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu9eg-es2'
+INFO: [Common 17-1540] The version limit for your license is '2023.01' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ddr_c0_ddr4_dm_dbi_n[1] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ddr_c0_ddr4_dq[10] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ddr_c0_ddr4_dq[11] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ddr_c0_ddr4_dq[12] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ddr_c0_ddr4_dq[13] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ddr_c0_ddr4_dq[14] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ddr_c0_ddr4_dq[15] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ddr_c0_ddr4_dq[8] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ddr_c0_ddr4_dq[9] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ddr_c0_ddr4_dqs_c[1] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ddr_c0_ddr4_dqs_t[1] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port sdio_spi_clk expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port sdio_spi_cs expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port sdio_spi_dat_0 expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port sdio_spi_dat_3 expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port uart_rxd expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port uart_txd expects both input and output buffering but the buffers are incomplete.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 17 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 7693 ; free virtual = 10149
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1b0c39389
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.07 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 7693 ; free virtual = 10149
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 7693 ; free virtual = 10149
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 83959992
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 7682 ; free virtual = 10143
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1604be8be
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:18 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 7544 ; free virtual = 10007
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1604be8be
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:18 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 7543 ; free virtual = 10006
+Phase 1 Placer Initialization | Checksum: 1604be8be
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:19 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 7542 ; free virtual = 10005
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 152592d8c
+
+Time (s): cpu = 00:01:53 ; elapsed = 00:00:50 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 7401 ; free virtual = 9866
+
+Phase 2.2 Physical Synthesis In Placer
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 6966 ; free virtual = 9444
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout              |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  HD Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                         |            0  |              0  |                     0  |           0  |           5  |  00:00:01  |
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2 Physical Synthesis In Placer | Checksum: 11764c6c4
+
+Time (s): cpu = 00:03:55 ; elapsed = 00:02:05 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 6966 ; free virtual = 9444
+Phase 2 Global Placement | Checksum: 13bbfc64e
+
+Time (s): cpu = 00:04:01 ; elapsed = 00:02:07 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 6988 ; free virtual = 9466
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 13bbfc64e
+
+Time (s): cpu = 00:04:02 ; elapsed = 00:02:08 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 6988 ; free virtual = 9466
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1aa3a1bbc
+
+Time (s): cpu = 00:04:16 ; elapsed = 00:02:13 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 6963 ; free virtual = 9441
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 228482ecd
+
+Time (s): cpu = 00:04:17 ; elapsed = 00:02:14 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 6963 ; free virtual = 9441
+
+Phase 3.4 Small Shape Clustering
+Phase 3.4 Small Shape Clustering | Checksum: 2325a4447
+
+Time (s): cpu = 00:04:25 ; elapsed = 00:02:21 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 6923 ; free virtual = 9402
+
+Phase 3.5 Flow Legalize Slice Clusters
+Phase 3.5 Flow Legalize Slice Clusters | Checksum: 23fe04ae2
+
+Time (s): cpu = 00:04:26 ; elapsed = 00:02:21 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 6924 ; free virtual = 9402
+
+Phase 3.6 Slice Area Swap
+Phase 3.6 Slice Area Swap | Checksum: 183acdeff
+
+Time (s): cpu = 00:04:37 ; elapsed = 00:02:30 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 6805 ; free virtual = 9283
+
+Phase 3.7 Commit Slice Clusters
+Phase 3.7 Commit Slice Clusters | Checksum: 19f9a2487
+
+Time (s): cpu = 00:04:59 ; elapsed = 00:02:37 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 6712 ; free virtual = 9190
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: 1c5508b88
+
+Time (s): cpu = 00:05:04 ; elapsed = 00:02:41 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 6632 ; free virtual = 9111
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: 17213749e
+
+Time (s): cpu = 00:05:05 ; elapsed = 00:02:42 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 6687 ; free virtual = 9168
+Phase 3 Detail Placement | Checksum: 17213749e
+
+Time (s): cpu = 00:05:06 ; elapsed = 00:02:43 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 6683 ; free virtual = 9164
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 205e86073
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-35] Processed net chiptop/system/resetSynchronizer/bundleOut_0_member_allClocks_subsystem_sbus_0_reset_catcher/io_sync_reset_chain/output_chain/sync_0_reg_0, inserted BUFG to drive 1372 loads.
+INFO: [Place 46-45] Replicated bufg driver chiptop/system/resetSynchronizer/bundleOut_0_member_allClocks_subsystem_sbus_0_reset_catcher/io_sync_reset_chain/output_chain/sync_0_reg_bufg_rep
+INFO: [Place 46-35] Processed net chiptop/system/tile_prci_domain/tile_reset_domain/tile/ptw/_T_144, inserted BUFG to drive 1024 loads.
+INFO: [Place 46-35] Processed net chiptop/system/tile_prci_domain/tile_reset_domain/tile/ptw/i___75_n_0, inserted BUFG to drive 1024 loads.
+INFO: [Place 46-35] Processed net chiptop/system/tile_prci_domain/tile_reset_domain/tile/ptw/l2_tlb_ram/l2_tlb_ram_ext/mem_0_0/SR[0], inserted BUFG to drive 1024 loads.
+INFO: [Place 46-46] BUFG insertion identified 4 candidate nets, 4 success, 1 bufg driver replicated, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason
+Phase 4.1.1.1 BUFG Insertion | Checksum: 13b4dcad9
+
+Time (s): cpu = 00:06:08 ; elapsed = 00:03:01 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 6348 ; free virtual = 8830
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.637. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: af518523
+
+Time (s): cpu = 00:06:09 ; elapsed = 00:03:02 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 6259 ; free virtual = 8741
+Phase 4.1 Post Commit Optimization | Checksum: af518523
+
+Time (s): cpu = 00:06:09 ; elapsed = 00:03:02 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 5868 ; free virtual = 8349
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: af518523
+
+Time (s): cpu = 00:06:11 ; elapsed = 00:03:03 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 6041 ; free virtual = 8522
+Netlist sorting complete. Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.15 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 5847 ; free virtual = 8328
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 104f41084
+
+Time (s): cpu = 00:06:19 ; elapsed = 00:03:12 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 5839 ; free virtual = 8320
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 5839 ; free virtual = 8320
+Phase 4.4 Final Placement Cleanup | Checksum: 17663399e
+
+Time (s): cpu = 00:06:20 ; elapsed = 00:03:12 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 5836 ; free virtual = 8317
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 17663399e
+
+Time (s): cpu = 00:06:20 ; elapsed = 00:03:13 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 5829 ; free virtual = 8311
+Ending Placer Task | Checksum: 156fae672
+
+Time (s): cpu = 00:06:20 ; elapsed = 00:03:13 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 5973 ; free virtual = 8454
+INFO: [Common 17-83] Releasing license: Implementation
+97 Infos, 56 Warnings, 15 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:06:28 ; elapsed = 00:04:00 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 5967 ; free virtual = 8449
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 5966 ; free virtual = 8448
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 5909 ; free virtual = 8423
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 5785 ; free virtual = 8377
+INFO: [Common 17-1381] The checkpoint '/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:25 ; elapsed = 00:00:20 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 5616 ; free virtual = 8127
+INFO: [runtcl-4] Executing : report_io -file ZCU102FPGATestHarness_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.33 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 5590 ; free virtual = 8101
+INFO: [runtcl-4] Executing : report_utilization -file ZCU102FPGATestHarness_utilization_placed.rpt -pb ZCU102FPGATestHarness_utilization_placed.pb
+report_utilization: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 5596 ; free virtual = 8107
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file ZCU102FPGATestHarness_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.36 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 5593 ; free virtual = 8105
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu9eg-es2'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu9eg-es2'
+INFO: [Common 17-1540] The version limit for your license is '2023.01' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: 262387f9 ConstDB: 0 ShapeSum: db34d318 RouteDB: 55a28b61
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 15a97d4bd
+
+Time (s): cpu = 00:01:58 ; elapsed = 00:01:36 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 3368 ; free virtual = 6024
+Post Restoration Checksum: NetGraph: 29bd361a NumContArr: 5043baf8 Constraints: 63a9541a Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: ddaa452c
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:01:37 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 3316 ; free virtual = 5974
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: ddaa452c
+
+Time (s): cpu = 00:02:00 ; elapsed = 00:01:37 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 3253 ; free virtual = 5912
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: ddaa452c
+
+Time (s): cpu = 00:02:00 ; elapsed = 00:01:37 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 3251 ; free virtual = 5910
+
+Phase 2.4 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.4 Global Clock Net Routing | Checksum: 1b56a308d
+
+Time (s): cpu = 00:02:05 ; elapsed = 00:01:42 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 3174 ; free virtual = 5833
+
+Phase 2.5 Update Timing
+Phase 2.5 Update Timing | Checksum: 22eae78cf
+
+Time (s): cpu = 00:03:07 ; elapsed = 00:02:01 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 4045 ; free virtual = 6704
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.881  | TNS=0.000  | WHS=-0.056 | THS=-14.316|
+
+
+Phase 2.6 Update Timing for Bus Skew
+
+Phase 2.6.1 Update Timing
+Phase 2.6.1 Update Timing | Checksum: 1f5303737
+
+Time (s): cpu = 00:04:25 ; elapsed = 00:02:22 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 3815 ; free virtual = 6510
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.881  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.6 Update Timing for Bus Skew | Checksum: 1ce7e206e
+
+Time (s): cpu = 00:04:25 ; elapsed = 00:02:23 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 3813 ; free virtual = 6511
+Phase 2 Router Initialization | Checksum: 165c5a507
+
+Time (s): cpu = 00:04:25 ; elapsed = 00:02:23 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 3806 ; free virtual = 6505
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1f4f51100
+
+Time (s): cpu = 00:05:08 ; elapsed = 00:02:39 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 3741 ; free virtual = 6453
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+INFO: [Route 35-443] CLB routing congestion detected. Several CLBs have high routing utilization, which can impact timing closure. Top ten most congested CLBs are: CLEM_X55Y233 CLEL_R_X55Y233 CLEM_X55Y235 CLEL_R_X55Y235 CLEM_X55Y231 CLEL_R_X55Y231 CLEM_X46Y199 CLEL_R_X46Y199 CLEM_X46Y219 CLEL_R_X46Y219 
+ Number of Nodes with overlaps = 22263
+ Number of Nodes with overlaps = 1809
+ Number of Nodes with overlaps = 227
+ Number of Nodes with overlaps = 44
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.583  | TNS=0.000  | WHS=-0.032 | THS=-0.035 |
+
+Phase 4.1 Global Iteration 0 | Checksum: 2056fa051
+
+Time (s): cpu = 00:09:30 ; elapsed = 00:04:46 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 3299 ; free virtual = 5988
+
+Phase 4.2 Additional Iteration for Hold
+Phase 4.2 Additional Iteration for Hold | Checksum: 23d94f026
+
+Time (s): cpu = 00:09:31 ; elapsed = 00:04:46 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 3303 ; free virtual = 5992
+Phase 4 Rip-up And Reroute | Checksum: 23d94f026
+
+Time (s): cpu = 00:09:31 ; elapsed = 00:04:46 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 3299 ; free virtual = 5989
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 289996b09
+
+Time (s): cpu = 00:09:56 ; elapsed = 00:04:55 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 3301 ; free virtual = 5990
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.583  | TNS=0.000  | WHS=0.013  | THS=0.000  |
+
+Phase 5.1 Delay CleanUp | Checksum: 28655a581
+
+Time (s): cpu = 00:09:57 ; elapsed = 00:04:55 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 3311 ; free virtual = 6000
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 28655a581
+
+Time (s): cpu = 00:09:57 ; elapsed = 00:04:56 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 3309 ; free virtual = 5998
+Phase 5 Delay and Skew Optimization | Checksum: 28655a581
+
+Time (s): cpu = 00:09:57 ; elapsed = 00:04:56 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 3307 ; free virtual = 5996
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 27af160e6
+
+Time (s): cpu = 00:10:16 ; elapsed = 00:05:02 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 3305 ; free virtual = 5994
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.583  | TNS=0.000  | WHS=0.013  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 25630716b
+
+Time (s): cpu = 00:10:16 ; elapsed = 00:05:03 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 3302 ; free virtual = 5991
+Phase 6 Post Hold Fix | Checksum: 25630716b
+
+Time (s): cpu = 00:10:17 ; elapsed = 00:05:03 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 3302 ; free virtual = 5991
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 4.86222 %
+  Global Horizontal Routing Utilization  = 4.75852 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 1aeada73a
+
+Time (s): cpu = 00:10:18 ; elapsed = 00:05:04 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 3296 ; free virtual = 5985
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1aeada73a
+
+Time (s): cpu = 00:10:18 ; elapsed = 00:05:05 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 3267 ; free virtual = 5956
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1aeada73a
+
+Time (s): cpu = 00:10:25 ; elapsed = 00:05:11 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 3298 ; free virtual = 5988
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.583  | TNS=0.000  | WHS=0.013  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 1aeada73a
+
+Time (s): cpu = 00:10:25 ; elapsed = 00:05:11 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 3300 ; free virtual = 5989
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:10:25 ; elapsed = 00:05:12 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 3400 ; free virtual = 6090
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+118 Infos, 56 Warnings, 15 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:10:37 ; elapsed = 00:05:59 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 3402 ; free virtual = 6091
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 3403 ; free virtual = 6092
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 3363 ; free virtual = 6085
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 3237 ; free virtual = 6073
+INFO: [Common 17-1381] The checkpoint '/home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:28 ; elapsed = 00:00:22 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 3376 ; free virtual = 6104
+INFO: [runtcl-4] Executing : report_drc -file ZCU102FPGATestHarness_drc_routed.rpt -pb ZCU102FPGATestHarness_drc_routed.pb -rpx ZCU102FPGATestHarness_drc_routed.rpx
+Command: report_drc -file ZCU102FPGATestHarness_drc_routed.rpt -pb ZCU102FPGATestHarness_drc_routed.pb -rpx ZCU102FPGATestHarness_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:25 ; elapsed = 00:00:07 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 3297 ; free virtual = 6026
+INFO: [runtcl-4] Executing : report_methodology -file ZCU102FPGATestHarness_methodology_drc_routed.rpt -pb ZCU102FPGATestHarness_methodology_drc_routed.pb -rpx ZCU102FPGATestHarness_methodology_drc_routed.rpx
+Command: report_methodology -file ZCU102FPGATestHarness_methodology_drc_routed.rpt -pb ZCU102FPGATestHarness_methodology_drc_routed.pb -rpx ZCU102FPGATestHarness_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/ssddls1/ashutosh/ashufpga/fpga/generated-src/chipyard.fpga.zcu102.ZCU102FPGATestHarness.RocketZCU102Config/ZCU102FPGATestHarness.runs/impl_1/ZCU102FPGATestHarness_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:01:34 ; elapsed = 00:00:26 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 2973 ; free virtual = 5704
+INFO: [runtcl-4] Executing : report_power -file ZCU102FPGATestHarness_power_routed.rpt -pb ZCU102FPGATestHarness_power_summary_routed.pb -rpx ZCU102FPGATestHarness_power_routed.rpx
+Command: report_power -file ZCU102FPGATestHarness_power_routed.rpt -pb ZCU102FPGATestHarness_power_summary_routed.pb -rpx ZCU102FPGATestHarness_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+130 Infos, 57 Warnings, 15 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:01:01 ; elapsed = 00:00:27 . Memory (MB): peak = 5341.223 ; gain = 0.000 ; free physical = 2987 ; free virtual = 5729
+INFO: [runtcl-4] Executing : report_route_status -file ZCU102FPGATestHarness_route_status.rpt -pb ZCU102FPGATestHarness_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file ZCU102FPGATestHarness_timing_summary_routed.rpt -pb ZCU102FPGATestHarness_timing_summary_routed.pb -rpx ZCU102FPGATestHarness_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: I, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file ZCU102FPGATestHarness_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file ZCU102FPGATestHarness_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file ZCU102FPGATestHarness_bus_skew_routed.rpt -pb ZCU102FPGATestHarness_bus_skew_routed.pb -rpx ZCU102FPGATestHarness_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: I, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 31 14:18:15 2023...
